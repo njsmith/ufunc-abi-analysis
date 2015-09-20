@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"> <!-- probably a lie but whatever -->
+    <title>Report on lines matching (cdef\W+(|.*\.\W*)ufunc)|(&lt;.*ufunc\W*&gt;)|(cdef.*\(.*ufunc)</title>
+  </head>
+  <body>
+    <style>
+    pre { display: inline; }
+    </style>
+    <script>
+    function toggle_one(id) {
+      var elem = document.getElementById(id);
+      if (elem.style.display != "none") {
+        elem.style.display = "none";
+      } else {
+        elem.style.display = "";
+      }
+    }
+    function toggle_many(selector) {
+      var elems = document.querySelectorAll(selector);
+      var first_elem_state = "none";
+      for (var i = 0; i < elems.length; ++i) {
+        if (i == 0) {
+          first_elem_state = elem.style.display;
+        }
+        if (first_elem_state != "none") {
+          elem.style.display = "none";
+        } else {
+          elem.style.display = "";
+        }
+      }
+    }
+    </script>
+
+    
+
+    
+
+    <h1>Report on lines matching <pre>(cdef\W+(|.*\.\W*)ufunc)|(&lt;.*ufunc\W*&gt;)|(cdef.*\(.*ufunc)</pre></h1>
+
+    <p>Data files:</p>
+    <ul>
+      
+      <li> pyufuncobject/searchcode-ufunc-cython.gz </li>
+      
+      <li> pyufuncobject/github-ufunc-cython.gz </li>
+      
+    </ul>
+
+    <p>Which contain search results for:</p>
+    <ul>
+      
+      <li><pre>ufunc language:cython</pre> on github (357 files)</li>
+      
+      <li><pre>ufunc lang:cython</pre> on searchcode (14 files)</li>
+      
+    </ul>
+    <p>Total files scanned: 371</p>
+
+    <h2>Matching lines</h2>
+    
+    <ul id="tree-root">
+      
+      <li>Group: NumPy itself (6 filters with 0 distinct matching lines)
+        
+    <small> <a href="javascript:toggle_one('node-0')">show/hide</a></small>
+    
+        <ul class="hideable" style="display: none;" id="node-0">
+          
+          <li>Filter: <tt>path</tt> matches <pre>/ufuncobject\.h$</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-1')">show/hide</a></small>
+    
+            
+            <ul class="hideable" style="display: none;" id="node-1">
+              
+      
+    
+            </ul>
+          </li>
+          
+          <li>Filter: <tt>path</tt> matches <pre>/numpy/core</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-2')">show/hide</a></small>
+    
+            
+            <ul class="hideable" style="display: none;" id="node-2">
+              
+      
+    
+            </ul>
+          </li>
+          
+          <li>Filter: <tt>path</tt> matches <pre>/numpy/lib</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-3')">show/hide</a></small>
+    
+            
+            <ul class="hideable" style="display: none;" id="node-3">
+              
+      
+    
+            </ul>
+          </li>
+          
+          <li>Filter: <tt>path</tt> matches <pre>/numpy/f2py</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-4')">show/hide</a></small>
+    
+            
+            <ul class="hideable" style="display: none;" id="node-4">
+              
+      
+    
+            </ul>
+          </li>
+          
+          <li>Filter: <tt>path</tt> matches <pre>/numpy/linalg</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-5')">show/hide</a></small>
+    
+            
+            <ul class="hideable" style="display: none;" id="node-5">
+              
+      
+    
+            </ul>
+          </li>
+          
+          <li>Filter: <tt>path</tt> matches <pre>/__ufunc_api\.h</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-6')">show/hide</a></small>
+    
+            
+            <ul class="hideable" style="display: none;" id="node-6">
+              
+      
+    
+            </ul>
+          </li>
+          
+        </ul>
+      </li>
+      
+      <li>Group: NumPy forks / precursors / etc. (6 filters with 0 distinct matching lines)
+        
+    <small> <a href="javascript:toggle_one('node-7')">show/hide</a></small>
+    
+        <ul class="hideable" style="display: none;" id="node-7">
+          
+          <li>Filter: <tt>repo</tt> matches <pre>bohrium/numpy</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-8')">show/hide</a></small>
+    
+            
+            <br>Comment: <i>numpy fork</i>
+            
+            <ul class="hideable" style="display: none;" id="node-8">
+              
+      
+    
+            </ul>
+          </li>
+          
+          <li>Filter: <tt>repo</tt> matches <pre>wolfgarnet/numpycbe</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-9')">show/hide</a></small>
+    
+            
+            <br>Comment: <i>numpy fork</i>
+            
+            <ul class="hideable" style="display: none;" id="node-9">
+              
+      
+    
+            </ul>
+          </li>
+          
+          <li>Filter: <tt>repo</tt> matches <pre>teoliphant/numpy-refactor</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-10')">show/hide</a></small>
+    
+            
+            <br>Comment: <i>defunct attempt to refactor numpy</i>
+            
+            <ul class="hideable" style="display: none;" id="node-10">
+              
+      
+    
+            </ul>
+          </li>
+          
+          <li>Filter: <tt>path</tt> matches <pre>/Numeric-</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-11')">show/hide</a></small>
+    
+            
+            <br>Comment: <i>Numeric</i>
+            
+            <ul class="hideable" style="display: none;" id="node-11">
+              
+      
+    
+            </ul>
+          </li>
+          
+          <li>Filter: <tt>path</tt> matches <pre>/Src/ufuncobject\.c</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-12')">show/hide</a></small>
+    
+            
+            <br>Comment: <i>Numeric</i>
+            
+            <ul class="hideable" style="display: none;" id="node-12">
+              
+      
+    
+            </ul>
+          </li>
+          
+          <li>Filter: <tt>path</tt> matches <pre>/Src/arrayobject\.c</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-13')">show/hide</a></small>
+    
+            
+            <br>Comment: <i>Numeric</i>
+            
+            <ul class="hideable" style="display: none;" id="node-13">
+              
+      
+    
+            </ul>
+          </li>
+          
+        </ul>
+      </li>
+      
+      <li>Group: Redundant (1 filters with 0 distinct matching lines)
+        
+    <small> <a href="javascript:toggle_one('node-14')">show/hide</a></small>
+    
+        <ul class="hideable" style="display: none;" id="node-14">
+          
+          <li>Filter: <tt>path</tt> matches <pre>/site-packages/</pre>
+            (0 distinct matching lines)
+            
+    <small> <a href="javascript:toggle_one('node-15')">show/hide</a></small>
+    
+            
+            <br>Comment: <i>someone checked in their venv/conda tree; we&#39;ll find the upstream project elsewhere</i>
+            
+            <ul class="hideable" style="display: none;" id="node-15">
+              
+      
+    
+            </ul>
+          </li>
+          
+        </ul>
+      </li>
+      
+      <li>Everything else (0 distinct unmatched lines)
+        
+    <small> <a href="javascript:toggle_one('leftovers')">show/hide</a></small>
+    
+        <ul class="hideable" id="leftovers" }}">
+          
+      
+    
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

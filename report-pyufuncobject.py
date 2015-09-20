@@ -27,8 +27,21 @@ junk = [group("NumPy itself",
               ]),
         ]
 
-make_report("PyUFuncObject", glob.glob("pyufuncobject/*PyUFuncObject*"),
-            "pyufuncobject-report.html",
+make_report("PyUFunc_ReplaceLoopBySignature",
+            glob.glob("search-results/*PyUFunc_ReplaceLoopBySignature*"),
+            "reports/PyUFunc_ReplaceLoopBySignature-report.html",
+            junk + [
+            ])
+
+make_report("PyUFunc_SetUsesArraysAsData",
+            glob.glob("search-results/*PyUFunc_SetUsesArraysAsData*"),
+            "reports/PyUFunc_SetUsesArraysAsData-report.html",
+            junk + [
+            ])
+
+make_report("PyUFuncObject",
+            glob.glob("search-results/*PyUFuncObject*"),
+            "reports/pyufuncobject-report.html",
             junk + [
                 group("Cython-generated boilerplate",
                       [filter("line",
@@ -52,7 +65,7 @@ make_report("PyUFuncObject", glob.glob("pyufuncobject/*PyUFuncObject*"),
 #   cdef foo(ufunc f):
 #   cdef foo(XX.ufunc f):
 make_report(r"(cdef\W+(|.*\.\W*)ufunc)|(<.*ufunc\W*>)|(cdef.*\(.*ufunc)",
-            glob.glob("pyufuncobject/*-ufunc-cython.gz"),
-            "ufunc-cython-report.html",
+            glob.glob("search-results/*-ufunc-cython.gz"),
+            "reports/ufunc-cython-report.html",
             junk + [
             ])
